@@ -1,8 +1,7 @@
-// import { FaLocationArrow } from "react-icons/fa6";
-
-// import MagicButton from "./MagicButton";
+import { FaLocationArrow } from "react-icons/fa";
+import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
-// import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
     return (
@@ -41,16 +40,34 @@ const Hero = () => {
             </div>
 
             <div className="flex justify-center relative my-20 z-10">
-                <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-                    <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-                        Dynamic Web Magic with Next.js
-                    </p>
+                <div className="max-w-[89vw] md:max-w-4xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+                    {/* <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+                        Sandeep More
+                        {/* <FaLocationArrow /> */}
+                    {/* </p> */}
 
-
-                    {/* <TextGenerateEffect
-                        words="Transforming Concepts into Seamless User Experiences"
+                    <TextGenerateEffect
+                        words="I AM SOFTWARE DEVELOPER PRACTITIONER"
                         className="text-center text-[40px] md:text-5xl lg:text-6xl"
                     />
+
+                    <p className="text-center text-white-200 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+                        Hi! I&apos;m Sandeep, Mern stack and  Next.js Developer.
+                    </p>
+                    <FaLocationArrow />
+                    <a href="#about">
+                        <MagicButton
+                            title="Show my work"
+                            icon={<FaLocationArrow />}
+                            position="right"
+                        />
+                    </a>
+                    {/* <TextGenerateEffect
+                        words="I AM SOFTWARE DEVELOPER PRACTITIONER"
+                        className="text-center text-[40px] md:text-5xl lg:text-6xl"
+                    /> */}
+
+                    {/*
 
                     <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
                         Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
